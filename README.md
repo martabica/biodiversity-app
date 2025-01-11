@@ -35,7 +35,7 @@ The Observation Table module displays a table of species observations. This tabl
 ### 5. **Map**
 The Map module uses **Leaflet** to visualize the geographical distribution of species observations. It shows interactive maps where users can explore how species are distributed across different regions in Poland.
 
-# Deploying the App in a Browser
+# Deploying the App in a browser
 
 You can access the **Biodiversity App** directly from your browser using the following link:
 
