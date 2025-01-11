@@ -1,0 +1,70 @@
+```{r}
+library(dplyr)
+```
+
+```{r}
+occurence <- read.csv("./data/occurence.csv")
+multimedia <- read.csv("./data/multimedia.csv")
+```
+
+```{r}
+table(multimedia$CoreId %in% occurence$id)
+```
+
+```{r}
+table(occurence$id %in% multimedia$CoreId)
+```
+
+```{r}
+occurence[1:5,]
+```
+
+```{r}
+poland_occurence <- occurence[occurence$country == "Poland",]
+```
+
+```{r}
+keep <- c("id", "scientificName", "vernacularName", "longitudeDecimal", "latitudeDecimal",
+          "locality", "eventDate")
+poland_occurence <- poland_occurence %>% select(all_of(keep))
+```
+
+```{r}
+poland_occurence[1:5,] 
+```
+
+```{r}
+#saveRDS(poland_occurence, "./poland-data/poland_occurence.rds")
+```
+
+```{r}
+multimedia[1:5,]
+```
+
+```{r}
+multimedia_poland <- multimedia[multimedia$CoreId %in% poland_occurence$id,]
+```
+
+```{r}
+keep <- c("CoreId", "Identifier")
+multimedia_poland <- multimedia_poland %>% select(all_of(keep))
+```
+
+```{r}
+multimedia_poland[1:5,]
+```
+
+```{r}
+#saveRDS(multimedia_poland, "./poland-data/poland_multimedia.rds")
+```
+
+
+
+
+
+
+
+
+
+
+

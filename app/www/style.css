@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+  font-size: 17px;
+}
+
+.irs-grid-text {
+  font-size: 17pt;
+}
+
+h5 {
+  font-size: 17px; 
+  font-weight: bold; 
+  color: #0277bf; 
+}
+
+.selectize-input {
+  font-size: 17px;
+  background-color: #e0f7fa; /* Light blue background */
+  border: 2px solid #0288d1; /* Blue border */
+  color: #000; /* Black text for contrast */
+}
+
+/* Change the text color when typing */
+.selectize-input input {
+  color: #0288d1; /* Blue text */
+}
+
+label.control-label {
+  font-size: 20px; 
+  font-weight: bold; 
+}
+
+.species-search {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Timeline and histogram positioning */
+.timeline-container {
+  position: relative;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.histogram-container {
+  position: relative;
+  top: -50px;
+}
+
+/* Observation table positioning */
+.observation-table {
+  position: relative;
+  top: -100px;
+}
+
+/* Map positioning */
+.map-container {
+  position: relative;
+  top: -50px;
+}
+
+
+
+
+
