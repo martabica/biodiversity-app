@@ -9,6 +9,8 @@ The app leverages the power of **Shiny** for interactivity, **Leaflet** for mapp
 
 ![Biodiversity Image](app-screenshot.png)
 
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://www.youtube.com/watch?v=hd-cIeGl7kk&ab_channel=MartaBica)
+
 ## Features
 
 - **Data Visualization**: Interactive visualizations of biodiversity data, including maps and charts.
