@@ -11,6 +11,7 @@ The app leverages the power of **Shiny** for interactivity, **Leaflet** for mapp
   <img src="play-video.png" alt="Demo Video">
 </a>
 
+[![Demo Video](play-video.png)](https://www.youtube.com/watch?v=hd-cIeGl7kk&ab_channel=MartaBica){:target="_blank"}
 
 ## Features
 
