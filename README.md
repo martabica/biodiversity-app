@@ -74,6 +74,24 @@ Make sure you have the following installed:
 
    This will launch the app in your default web browser.
 
+## Running the App with Docker
+
+To run the app in a Docker container, follow these steps:
+
+1. Ensure you have Docker installed on your machine. If not, you can download and install Docker from [here](https://www.docker.com/get-started).
+
+2. Pull the Docker image:
+   ```bash
+   docker pull martabica/biodiversity-app:latest
+   ```
+
+3. Run the app with the following command:
+   ```bash
+   docker run -p 3838:3838 martabica/biodiversity-app:latest
+   ```
+
+4. Once the container is running, the app will be accessible at `http://localhost:3838` in your web browser.
+
 ## Usage
 
 Once the app is running, you can:
