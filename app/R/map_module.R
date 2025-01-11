@@ -28,10 +28,10 @@ map_server <- function(id, species_data, selected_year) {
         # Generate the map
         leaflet(filtered_data) %>%
           addTiles() %>%
-          addMarkers(~longitudeDecimal, 
-                     ~latitudeDecimal, 
-                     popup = ~paste(vernacularName, 
-                                    "(", scientificName, ") - ", eventDate)) %>%
+          #addMarkers(~longitudeDecimal, 
+          #           ~latitudeDecimal, 
+          #           popup = ~paste(vernacularName, 
+          #                          "(", scientificName, ") - ", eventDate)) %>%
           addCircleMarkers(
             ~longitudeDecimal, ~latitudeDecimal,
             color = ~ifelse(vernacularName == top_species[1], "blue", "green"),
@@ -53,10 +53,15 @@ map_server <- function(id, species_data, selected_year) {
           leaflet(data) %>%
             addTiles() %>%
             
-            addMarkers(~longitudeDecimal, 
-                       ~latitudeDecimal, 
-                       popup = ~paste(vernacularName, 
-                                      "(", scientificName, ") - ", eventDate)) %>%
+            #addMarkers(~longitudeDecimal, 
+            #           ~latitudeDecimal, 
+            #           popup = ~paste(vernacularName, 
+            #                          "(", scientificName, ") - ", eventDate)) %>%
+            addCircleMarkers(~longitudeDecimal, 
+                             ~latitudeDecimal,
+                             color = "blue",
+                             popup = ~paste(vernacularName, "(", scientificName, ") - ", eventDate)
+          )
             
       
             setView(lng = 19.1451, lat = 51.9194, zoom = 6)
