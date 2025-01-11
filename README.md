@@ -43,7 +43,7 @@ You can access the **Biodiversity App** directly from your browser using the fol
 
 This app is hosted on **shinyapps.io**.
 
-# Deploying the locally
+# Deploying the App locally
 
 ## Installation
 
