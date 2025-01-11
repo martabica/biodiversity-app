@@ -28,7 +28,9 @@ map_server <- function(id, species_data, selected_year) {
         # Generate the map
         leaflet(filtered_data) %>%
           addTiles() %>%
-          #addMarkers(~longitudeDecimal, 
+          
+          #icon markers do not work in docker deployment
+          #addMarkers(~longitudeDecimal,  
           #           ~latitudeDecimal, 
           #           popup = ~paste(vernacularName, 
           #                          "(", scientificName, ") - ", eventDate)) %>%
@@ -52,7 +54,8 @@ map_server <- function(id, species_data, selected_year) {
           
           leaflet(data) %>%
             addTiles() %>%
-            
+
+           #icon markers do not work in docker deployment
             #addMarkers(~longitudeDecimal, 
             #           ~latitudeDecimal, 
             #           popup = ~paste(vernacularName, 
