@@ -7,6 +7,8 @@ The **Biodiversity App** is a Shiny-based web application designed to explore an
 
 The app leverages the power of **Shiny** for interactivity, **Leaflet** for mapping, **ggplot2** and **plotly** for advanced visualizations, and other R libraries for data processing and manipulation.
 
+![Biodiversity Image](app-screenshot.png)
+
 ## Features
 
 - **Data Visualization**: Interactive visualizations of biodiversity data, including maps and charts.
