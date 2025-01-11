@@ -15,7 +15,7 @@ RUN apt-get install -y libgeos-dev
 
 RUN apt-get install -y libglpk40 libglpk-dev
 
-RUN apt-ge install libxt6
+RUN apt-ge install -y libxt6
 
 # Install R packages
 RUN R -e 'install.packages("data.table", repos="https://packagemanager.rstudio.com/cran/__linux__/focal/2023-04-20")'
