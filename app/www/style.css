@@ -51,6 +51,7 @@ label.control-label {
 .observation-table {
   position: relative;
   top: -100px;
+  font-size: 13px;
 }
 
 /* Map positioning */
