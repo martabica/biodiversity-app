@@ -61,7 +61,7 @@ map_server <- function(id, species_data, selected_year) {
                              ~latitudeDecimal,
                              color = "blue",
                              popup = ~paste(vernacularName, "(", scientificName, ") - ", eventDate)
-          )
+          ) %>%
             
       
             setView(lng = 19.1451, lat = 51.9194, zoom = 6)
