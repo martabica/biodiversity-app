@@ -1,0 +1,31 @@
+# Create docker image 
+name: Build Docker Image 
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'app/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_MB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_MB_PASS }}
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v4
+      with:
+        context: ./app      
+        file: ./app/Dockerfile  
+        push: true
+        tags: ${{ secrets.DOCKERHUB_MB_USERNAME }}/biodiversity-app:latest
