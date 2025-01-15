@@ -55,7 +55,7 @@ Make sure you have the following installed:
 
 - **R** (4.1.2 version recommended)
 - **Shiny** library
-- Other R libraries as listed in the `DESCRIPTION` file
+- Other R libraries as listed in the App.R file
 
 ### Steps
 
