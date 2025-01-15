@@ -53,7 +53,7 @@ To run the app locally, follow these steps:
 
 Make sure you have the following installed:
 
-- **R** (latest version recommended)
+- **R** (4.1.2 version recommended)
 - **Shiny** library
 - Other R libraries as listed in the `DESCRIPTION` file
 
